@@ -1,0 +1,25 @@
+{
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "scss": "sass --watch scss/index.scss public/css/index.css --no-source-map",
+    "cleanup": "node cleanup.js",
+    "start": "concurrently \"npm run cleanup\" \"npm run scss\" \"npm run server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "node": "^23.11.0",
+    "nodemon": "^3.1.9",
+    "path-to-regexp": "^8.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "sass": "^1.86.3"
+  }
+}
