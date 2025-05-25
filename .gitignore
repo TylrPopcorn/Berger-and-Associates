@@ -1,0 +1,17 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore logs
+logs
+*.log
+npm-debug.log*
+
+# Ignore build output
+dist/
+build/
+
+# Ignore environment variables
+.env
+
+# Ignore compiled CSS files
+public/css/*.css.map
