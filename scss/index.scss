@@ -1,0 +1,19 @@
+//THIS IS THE MAIN SCSS FILE.
+
+//IMPORT ALL OTHER PAGES TO MAIN FILE
+@use "partials/navbar";
+@use "partials/hero";
+@use "partials/about";
+@use "partials/services";
+@use "partials/whyUs";
+@use "partials/gallery";
+@use "partials/testimonials";
+@use "partials/contact";
+@use "partials/footer";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
