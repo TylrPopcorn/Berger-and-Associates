@@ -1,0 +1,94 @@
+/** SERVICES **/
+
+//======= VARIABLES
+@use "variables" as vars; //GLOBAL VARIABLES
+
+.Services {
+  padding: 90px 0px;
+  background: url("/imgs/Services.png") center center/cover;
+
+  .header {
+    margin-left: 5%;
+    margin-bottom: 2rem;
+    gap: 1rem;
+
+    .line {
+      min-width: 4px;
+      height: 50px;
+      background-color: white;
+    }
+
+    h1 {
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      font-size: clamp(2.2rem, 2.7vw, 3rem);
+      color: white;
+      font-family: vars.$header-text;
+    }
+
+    @media (max-width: 975px) {
+      margin-left: 20px;
+    }
+  }
+
+  .content {
+    margin: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    padding: 0px 10px;
+
+    display: flex;
+    justify-content: center;
+
+    .service-box {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 2px solid white;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.877);
+      padding: 1rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // max-width: 650px;
+
+      .img {
+        width: 80%;
+        height: 10rem;
+        margin-bottom: 0.5rem;
+        max-width: 350px;
+        min-width: 220px;
+      }
+
+      .img1 {
+        background: url("/imgs/service_1.png") center center/cover;
+      }
+
+      .img2 {
+        background: url("/imgs/service_2.png") center center/cover;
+      }
+
+      .img3 {
+        background: url("/imgs/service_3.png") center center/cover;
+      }
+
+      .img4 {
+        background: url("/imgs/service_4.png") center center/cover;
+      }
+
+      h1 {
+        font-family: vars.$header-text;
+        font-size: clamp(1.5rem, 1.8vw + 0.3rem, 2rem);
+        margin-bottom: 1rem;
+      }
+
+      .description {
+        width: 80%;
+        font-family: vars.$secondary-text;
+        font-size: clamp(1.2rem, 1vw, 1.2rem);
+        color: rgba(255, 255, 255, 0.863);
+      }
+    }
+  }
+}
