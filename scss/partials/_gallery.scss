@@ -1,0 +1,74 @@
+/** GALLERY **/
+
+//======= VARIABLES
+@use "variables" as vars; //GLOBAL VARIABLES
+
+.Gallery {
+  height: 45vh;
+  background-color: white;
+  position: relative;
+
+  .background-color {
+    background-color: vars.$nonTransparent;
+    height: 20vh;
+    width: 100%;
+    position: absolute;
+  }
+
+  .imgs {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 90%;
+    padding-right: 20px;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+
+    .img {
+      flex: 1 1 200px;
+      height: 35vh;
+    }
+
+    .img1 {
+      background: url("/imgs/Gallery1.png") center center/cover no-repeat;
+    }
+
+    .img2 {
+      background: url("/imgs/Gallery2.png") center center/cover no-repeat;
+    }
+
+    .img3 {
+      background: url("/imgs/Gallery3.png") center center/cover no-repeat;
+    }
+  }
+}
+
+// MOBILE
+@media (max-width: 768px) {
+  .Gallery {
+    height: auto;
+    padding-bottom: 2rem;
+
+    .imgs {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      padding-top: 2rem;
+      width: 90%;
+
+      .img {
+        width: 100%;
+      }
+    }
+
+    .background-color {
+      height: 270px;
+    }
+  }
+}
