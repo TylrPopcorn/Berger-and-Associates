@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <!-- CSS FILE BULMA NEEDS IN ORDER TO WORK CORRECTLY -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/index.css" />
+    <!-- RALEWAY FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- OPEN SANS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <%- include('partials/navbar') %>
+
+    <!-- HERO -->
+    <div class="Hero" id="Hero">
+      <div class="img">
+        <div class="text-content container has-text-white">
+          <h1 class="title">Your Trusted Tax Partner</h1>
+          <p class="sub-title">For Real Estate Professionals & Entreprenuers</p>
+          <button class="CTA" onclick="window.location.reload();">
+            Schedule An Appointment
+          </button>
+        </div>
+        <div class="bottom-arrow container is-flex is-justify-content-center">
+          <div class="arrow my-4"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="About" id="About">
+      <div class="backgroundColor"></div>
+      <div class="content columns">
+        <div class="img-wrapper column">
+          <div class="img"></div>
+        </div>
+        <div class="text-content column">
+          <div class="header is-flex">
+            <div class="line"></div>
+            <h1 class="mx-4 my-0">
+              <span>Specialized Expertise</span> for <br />
+              Real Estate Professionals
+            </h1>
+          </div>
+          <p class="description">
+            Our clients include many residential and commercial real estate
+            professionals, including agents and mortgage brokers. This deep
+            industry knowledge base allows us to understand and plan for the
+            needs of real estate owners and investors.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="Services" id="Services">
+      <div class="header container is-flex is-align-items-center">
+        <div class="line"></div>
+        <h1>Our Services</h1>
+      </div>
+      <div class="content columns is-multiline">
+        <div class="service-box column">
+          <div class="img img1"></div>
+          <h1 class="title">Tax Planning</h1>
+          <p class="description">
+            Berger and Associates specializes in tax planning for businesses,
+            not-for-profits, and individuals. We can work with your business
+            needs from set up, to planning, to filing.
+          </p>
+        </div>
+
+        <div class="service-box column">
+          <div class="img img2"></div>
+          <h1 class="title">Accounting Services</h1>
+          <p class="description">
+            We provide expert accounting services for micro-businesses,
+            entrepreneurs, and start-ups, ensuring you navigate tax laws and
+            claim every deduction you deserve.
+          </p>
+        </div>
+
+        <div class="service-box column">
+          <div class="img img3"></div>
+          <h1 class="title">Tax Preparation and Advice</h1>
+          <p class="description">
+            Using the latest technology, Berger and Associates prepares your
+            taxes safely, securely, and efficiently. We also provide expert tax
+            advice to help you navigate the complexities of tax laws with
+            confidence.
+          </p>
+        </div>
+
+        <div class="service-box column">
+          <div class="img img4"></div>
+          <h1 class="title">Hourly Consulting</h1>
+          <p class="description">
+            If you want to prepare your own tax returns, but require a little
+            assistance, Berger and Associates offers hourly consulting and
+            review by and experienced CPA.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY CHOOSE US  -->
+    <div class="WhyChooseUs" id="WhyChooseUs">
+      <div class="content-wrapper columns">
+        <div class="text-content column">
+          <div class="header is-flex is-align-items-center">
+            <div class="line"></div>
+            <h1>Why Choose Us</h1>
+          </div>
+          <p class="description">
+            At Berger & Associates, we pride ourselves on delivering
+            personalized tax planning and accounting services with unmatched
+            expertise and care. With years of experience serving real estate
+            professionals, entrepreneurs, and small businesses, our focus is to
+            help you optimize your financial success while ensuring compliance
+            with ever-changing tax regulations.
+          </p>
+        </div>
+        <div class="icon-content column">
+          <div class="iconBox">
+            <div class="img img1"></div>
+            <h1>Personalized Tax Solutions</h1>
+          </div>
+          <div class="iconBox">
+            <div class="img img2"></div>
+            <h1>Expertise in Real Estate Taxation</h1>
+          </div>
+          <div class="iconBox">
+            <div class="img img3"></div>
+            <h1>Secure and Reliable Service</h1>
+          </div>
+          <div class="iconBox">
+            <div class="img img4"></div>
+            <h1>Transparent & Honest Communication</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="Gallery" id="Gallery">
+      <div class="background-color"></div>
+      <div class="imgs is-flex">
+        <div class="img img1"></div>
+        <div class="img img3"></div>
+        <div class="img img2"></div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="Testimonials" id="Testimonials">
+      <div class="header container is-flex is-align-items-center">
+        <div class="line"></div>
+        <h1>Testimonials</h1>
+      </div>
+      <div class="content">
+        <div class="wrapper">
+          <button class="prev">&#10094;</button>
+
+          <div class="track columns">
+            <div class="card_ column">
+              <div class="box_">
+                <p>
+                  “Burman is a great CPA who knows what he's doing. He has been
+                  helpful to many of my clients and I have received good
+                  feedback from them. He also a great guy and a great family
+                  man.”
+                </p>
+              </div>
+              <h3>-Seth K.</h3>
+            </div>
+            <div class="card_ column">
+              <div class="box_">
+                <p>
+                  “Burman provided excellent information regarding the 2019 tax
+                  year and I was very impressed with the method he used to
+                  convey the information! He discussed ideas I hadn't thought of
+                  and I am very grateful!”
+                </p>
+              </div>
+              <h3>-Lisa E.</h3>
+            </div>
+            <div class="card_ column">
+              <div class="box_">
+                <p>
+                  "Burman has been an excellent resource for all of our tax
+                  preparation needs."
+                </p>
+              </div>
+              <h3>-Andrew W.</h3>
+            </div>
+          </div>
+
+          <button class="next">&#10095;</button>
+        </div>
+
+        <div class="dots is-flex">
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="Contact columns" id="Contact">
+      <div class="imgSctn column">
+        <div class="img"></div>
+      </div>
+      <div class="contactForm column">
+        <div class="header">
+          <div class="line"></div>
+          <h1>Get in Touch</h1>
+        </div>
+        <div class="formWrapper">
+          <form>
+            <label class="Name"
+              >Name
+              <input placeholder="Name" name="name" type="text" />
+            </label>
+            <label class="Email"
+              >Email
+              <input placeholder="Email" name="email" type="email" />
+            </label>
+            <label class="Phone"
+              >Phone
+              <input placeholder="Phone" name="phone" type="number" />
+            </label>
+            <label class="HYFU"
+              >How did you find us?
+              <input
+                placeholder="Google search, social media, referral, ad, etc"
+                name="hyfu"
+                type="text"
+              />
+            </label>
+            <label class="Message">
+              Message
+              <textarea
+                placeholder="What would you like to say to us?"
+                name="message"
+              ></textarea>
+            </label>
+            <div class="button-wrapper is-flex is-justify-content-center">
+              <button onclick="location.reload()">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <%- include('partials/footer') %>
+  </body>
+</html>
