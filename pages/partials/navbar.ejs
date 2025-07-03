@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+  </head>
+  <body>
+    <nav class="nav" id="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <!-- TITLE / LOGO -->
+        <a class="navbar-item navbar-start">
+          <div class="LOGO" alt="site logo"></div>
+        </a>
+
+        <!-- Burger icon-->
+        <a
+          role="button"
+          class="menu-icon navbar-end"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="nav-links"
+          id="burger"
+        >
+          &#9776;
+        </a>
+      </div>
+
+      <!-- nav buttons -->
+      <div class="menu-links" id="nav-links">
+        <a class="navbar-item" href="#About">About</a>
+        <a class="navbar-item" href="#Services">Services</a>
+        <a class="navbar-item" href="#Gallery">Gallery</a>
+        <a class="navbar-item" href="#Testimonials">Testimonials</a>
+        <a class="navbar-item" href="#Contact">Contact</a>
+      </div>
+
+      <script>
+        const burgerIcon = document.querySelector("#burger");
+        const navbarMenu = document.querySelector("#nav-links");
+
+        burgerIcon.addEventListener("click", () => {
+          burgerIcon.classList.toggle("is-active");
+          navbarMenu.classList.toggle("is-active");
+        });
+      </script>
+    </nav>
+  </body>
+</html>
