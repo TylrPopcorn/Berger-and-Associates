@@ -21,6 +21,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
+const PORT = process.env.PORT || 3000;
 const morgan = require("morgan");
 //-------------
 app.use(express.static("public")); //This makes sure any file inside public/ (like imgs/LOGO.png) is accessible directly via /imgs/LOGO.png.
@@ -42,6 +43,6 @@ app.get("*", (req, res) => {
 });
 
 //----Listen to port:
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("LISTENING ON PORT 3000!");
 });
