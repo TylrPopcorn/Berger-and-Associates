@@ -2,7 +2,7 @@
 
 A complete redesign and front-end build named Berger & Associates, originally created in Figma and fully implemented using EJS templating. This project features a clean, modern UI with a fully responsive layout and structured content hierarchy. It showcases the full transformation of a high-fidelity mockup into a functional, production-ready website — blending performance, accessibility, and design precision. Key highlights include modular EJS components, optimized layout responsiveness, and attention to user experience across devices.
 
-Live: 
+Live: https://berger-and-associates.onrender.com/
 
 ![Page22](https://github.com/user-attachments/assets/dbf4982a-f105-49d9-ac23-78796c65b0cf)
 <sup>Credit goes to the original/external sources used.</sup>
