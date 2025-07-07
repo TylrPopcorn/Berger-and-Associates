@@ -17,7 +17,7 @@ Live: https://berger-and-associates.onrender.com/
 
 <b>Extra Resources:
 - Figma: https://www.figma.com/
-- Documentation: https://svelte.dev/docs/introduction
+- Documentation: https://ejs.co/
 </b>
 
 # Related Projects
